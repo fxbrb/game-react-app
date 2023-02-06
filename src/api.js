@@ -1,5 +1,6 @@
 // Base URL
-const key = `${process.env.REACT_APP_RAWG_API}`;
+// const key = `${process.env.REACT_APP_RAWG_API}`;
+const key = "2ee1a51015e64db08b96d1cb4ecf60c3";
 const key_url = `key=${key}`;
 const BASE_URL = `https://api.rawg.io/api/`;
 

@@ -11,13 +11,14 @@ import { fadeIn } from "../animation";
 function Home() {
   const location = useLocation();
   const pathId = location.pathname.split("/")[2];
-  console.log(pathId);
+
   // Fetch games
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(loadGames(10));
   }, [dispatch]);
-  // DIsplay data from store
+
+  // Display data from store
   const { popular, newGames, upcoming, searched } = useSelector(
     (state) => state.rootReducer.games
   );
